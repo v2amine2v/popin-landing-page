@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>soda page wewe</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+
+	<header>
+       <div class="logoStuff">
+		<div class="logoCircle" id="logo-circle">
+		    <div class="headerImage">
+				<img src="imgs/icon.png">
+		    </div>
+		</div>
+		    <div class="headerText">
+                popin'
+		    </div>
+	   </div>
+	   <nav>
+<a class="mainNav" onclick="mainPage()">main</a>
+<a class="flavorsNav" onclick="flavorPage()">flavors</a>
+<a class="aboutNav" onclick="aboutPage()">about</a>
+<a class="shopeNav" onclick="shopePage()">shop</a>
+<a class="">contact us</a>
+<i class="ti ti-brush"></i>
+	   </nav>
+	 </header>
+
+	<!-- <div class="loading-page">
+		<h1 class="loadingTitle">wellcome to popin'</h1>
+	    <h2 class="loadingMiniTitle">preparing your drink<span class="dots"></span></h2>	
+		<div class="circle">
+			<div class="circleTwo"></div>
+			<div class="square"><div class="smolCircle"></div>
+			</div>
+		</div>
+	  </div> -->
+
+	  <main class="intro">
+		  <section class="container">
+             <div class="textArea">
+				<h1>Popin'</h1>
+				<h2>Crack your can open,<br>get your day startin'</h2>
+                <button class="buy-now-btn" onclick="shopePage()">Check The Store <i class="ti ti-shopping-cart-filled"></i></button>
+			 </div>
+			 <div class="imageArea"></div>
+		  </section>
+		
+		
+		<section class="flavorsList" id="flavorSec">
+			<h1 id="flavorSec">Our best selling flavors</h1>
+
+		    <div class="flavorContainer">
+
+			    <div class="strawberry odd flavorBox" >
+				    <div class="imgBox" onclick="changeThemes('strawberry')"></div>
+				    <div class="textBox"><h3>Blush Burst</h3><p>A smooth and sweet strawberry flavor with a refreshing twist for a bright, juicy taste.</p></div>
+			    </div>
+
+				<div class="blueberry even flavorBox" onclick=changeThemes(blueberry)>
+				    <div class="imgBox"></div>
+				    <div class="textBox"><h3>Indigo Chill</h3><p>A cool, fruity blend of ripe blueberries with a subtle tart edge for a refreshing kick.</p></div>
+			    </div>
+
+				<div class="pineaple odd flavorBox" onclick=changeThemes(pineaple)>
+				       <div class="imgBox "></div>
+				       <div class="textBox"><h3>Golden Splash</h3><p>Tropical pineapple goodness with a crisp, tangy finish that feels like sunshine in a sip.</p></div>	
+			        </div>
+				
+
+				<div class="peach even flavorBox" onclick=changeThemes(peach)>
+				    <div class="imgBox"></div>
+				    <div class="textBox"><h3>Velvet Peach</h3><p>Soft and mellow peach notes, perfectly balanced for a light and comforting flavor.</p></div>
+			    </div>
+
+				<div class="lemon odd flavorBox" >
+				    <div class="imgBox"onclick="changeThemes('lemon')"></div>
+				    <div class="textBox"><h3>Citrus Spark</h3><p>Bright and zesty lemon flavor, sharp yet smooth, made to awaken your senses.</p></div>
+			    </div>
+
+			</div>
+		  </section>
+
+		<section class="aboutUs">
+			<div class="wholeAboutUs" id="about-section">
+			<h1>about us</h1>
+			 <div class="aboutUsContainer">
+				<div class="identity gridBox"><h3>Who are we</h3><p>We’re not just a soda brand—we’re the fizz that makes life fun. Our team is made of flavor creators and soda lovers who believe every sip should feel like a little celebration. Bold ideas, bright colors, and big taste—that’s what we stand for.</p></div>
+				<div class="job gridBox"><h3>What do we do</h3><p>We create vibrant, delicious drinks packed with personality—made for people who love to pop open a can and enjoy life. From unique flavors to eye-catching designs, we’re here to make soda an experience, not just a drink.</p></div>
+			 </div>
+			 </div>
+		  </section>
+
+		<section class="shop">
+            <div class="wholeShop" >
+				<h1 id="shopSec">Our shop</h1>
+				<div class="slider" style="
+				--width: 300px;
+				--height: 300px;
+				--quantity: 10;
+			">
+				  <div class="list">
+					<div class="item" style="--position: 1"><img src="imgs/pineaple.png"><div class="overlay">
+						<h3>Golden Splash : $3.99</h3>
+						<a href="https://www.youtube.com/watch?v=P8oiFMH-uFg"><button >Add to Cart</button></a>
+					</div></div>
+					<div class="item" style="--position: 2"><img src="imgs/blueberry.png"><div class="overlay">
+						<h3>Indigo Chill : $3.99</h3>
+						<a href="https://www.youtube.com/watch?v=P8oiFMH-uFg"><button>Add to Cart</button></a>
+					</div></div>
+					<div class="item" style="--position: 3"><img src="imgs/kiwi.png"><div class="overlay">
+						<h3>kiwistry : $3.99</h3>
+						<a href="https://www.youtube.com/watch?v=P8oiFMH-uFg"><button>Add to Cart</button></a>
+					</div></div>
+					<div class="item" style="--position: 4"><img src="imgs/pear.png"><div class="overlay">
+						<h3>Pearfect : $3.99</h3>
+						<a href="https://www.youtube.com/watch?v=P8oiFMH-uFg"><button>Add to Cart</button></a>
+					</div></div>
+					<div class="item" style="--position: 5"><img src="imgs/cherry.png"><div class="overlay">
+						<h3>cherry Blossom : $3.99</h3>
+						<a href="https://www.youtube.com/watch?v=P8oiFMH-uFg"><button>Add to Cart</button></a>
+					</div></div>
+					<div class="item" style="--position: 6"><img src="imgs/apple.png"><div class="overlay">
+						<h3>Crimson Red : $3.99</h3>
+						<a href="https://www.youtube.com/watch?v=P8oiFMH-uFg"><button>Add to Cart</button></a>
+					</div></div>
+					<div class="item" style="--position: 7"><img src="imgs/peach.png"><div class="overlay">
+						<h3>Velvet Peach : $3.99</h3>
+						<a href="https://www.youtube.com/watch?v=P8oiFMH-uFg"><button>Add to Cart</button></a>
+					</div></div>
+					<div class="item" style="--position: 8"><img src="imgs/grape.png"><div class="overlay">
+						<h3>Velvine : $3.99</h3>
+						<a href="https://www.youtube.com/watch?v=P8oiFMH-uFg"><button>Add to Cart</button></a>
+					</div></div>
+					<div class="item" style="--position: 9"><img src="imgs/lemon-soda.png"><div class="overlay">
+						<h3>Citrus Spark : $3.99</h3>
+						<a href="https://www.youtube.com/watch?v=P8oiFMH-uFg"><button>Add to Cart</button></a>
+					</div></div>
+					<div class="item" style="--position: 10"><img src="imgs/strawberry.png"><div class="overlay">
+						<h3>Blush Burst : $3.99</h3>
+						<a href="https://www.youtube.com/watch?v=P8oiFMH-uFg"><button>Add to Cart</button></a>
+					</div></div>
+				  </div>
+			   </div>
+			</div>
+		 </section>
+
+		<footer class="site-footer">
+			<div class="footer-content">
+				<p>&copy2025, all rights are reserved . popin'!</p>
+			</div>
+		 </footer>
+	 </main>
+
+</body>
+</html>
