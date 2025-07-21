@@ -41,6 +41,7 @@
 	position:sticky;
 	top:0;
 	background-color: var(--introTextAreaColor);
+	transition: all 0.5s;
 }
 .textArea{
 	grid-column: 1 / 2;
@@ -50,6 +51,7 @@
 	color: var(--textArea);
 	justify-content: center;
 	position: relative;
+	transition: all 0.5s;
 }
 .imageArea{
 	grid-column: 2 / 3;
@@ -58,6 +60,7 @@
 	background-repeat: none;
     background-image: var(--imageAreaImg);
 	position: relative;
+	transition: all 0.5s;
 }
 .textArea h1{
 font-family: 'winky', cursive;
@@ -65,6 +68,7 @@ font-size: 6em;
 margin-bottom: 0.2em;
 letter-spacing: 2px;
 text-shadow: 2px 2px 8px var(--textAreaShadow);
+transition: all 0.5s;
 }
 .textArea h2{
 font-family: 'ubuntu', sans-serif;
@@ -73,6 +77,7 @@ font-weight: 400;
 margin-bottom: 1.5em;
 line-height: 1.2;
 text-shadow: 1px 1px 4px var(--textAreaShadow);
+transition: all 0.5s;
 }
 .buy-now-btn {
   background: var(--buyNowBtn);
@@ -283,9 +288,9 @@ text-shadow: 1px 1px 4px var(--textAreaShadow);
   letter-spacing: 1px;
 }
 .overlay button:hover{
-  background: rgb(205, 214, 190);
+  background: var(--navHover);
   transform: scale(1.05);
-  box-shadow: 0 0 10px 5px rgba(70, 133, 52, 0.349);
+  box-shadow: 0 0 10px 5px var(--navHoverShadow);
   color: #333;
 }
 .site-footer {
@@ -408,6 +413,7 @@ nav i{
 	background-color: #333;
 	border-radius: 50%;
 	height: 20px;
+	z-index: 10000000;
 }
 nav i:hover{
 	scale: 1.1;

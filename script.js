@@ -55,7 +55,58 @@ const themes = {
     '--aboutBoxBorer' :' rgb(172, 100, 100)',
     '--aboutBoxBg':'rgb(252, 238, 238)',
     '--aboutBoxTitles':'rgb(131, 110, 110)',
-  }
+  },
+  blueberry: {
+    '--imageAreaImg': 'url(imgs/blueberry-soda.png)',
+    '--titlesColors': 'rgb(74, 111, 165)',
+    '--introTextAreaColor': 'rgb(86, 53, 144)',
+    '--buyNowBtn':  'rgb(64, 93, 162)',
+    '--buyNowBtnHover': 'rgb(33, 52, 99)',
+    '--flavourBg': 'rgb(236, 230, 250)',
+    '--aboutUsBg': 'rgb(225, 215, 245)',
+    '--textAreaShadow': 'rgb(100, 80, 150)',
+    '--textArea': 'rgb(245, 240, 255)',
+    '--navHover': 'rgb(210, 195, 240)',
+    '--navHoverShadow': 'rgb(185, 165, 220)',
+    '--navActive': 'rgb(160, 130, 200)',
+    '--aboutBoxBorer': 'rgb(130, 100, 170)',
+    '--aboutBoxBg': 'rgb(240, 235, 250)',
+    '--aboutBoxTitles': 'rgb(100, 80, 140)',
+  },
+  pineapple: {
+    '--imageAreaImg': 'url(imgs/pineapple-soda.png)',
+    '--titlesColors': 'rgb(240, 180, 40)',
+    '--introTextAreaColor': 'rgb(255, 213, 10)',
+    '--buyNowBtn': 'rgb(255, 225, 130)',
+    '--buyNowBtnHover': 'rgb(240, 188, 57)',
+    '--flavourBg': 'rgb(255, 248, 210)',
+    '--aboutUsBg': 'rgb(255, 243, 200)',
+    '--textAreaShadow': 'rgb(200, 160, 60)',
+    '--textArea': 'rgb(255, 245, 210)',
+    '--navHover': 'rgb(255, 235, 170)',
+    '--navHoverShadow': 'rgb(235, 205, 120)',
+    '--navActive': 'rgb(240, 200, 80)',
+    '--aboutBoxBorer': 'rgb(190, 150, 50)',
+    '--aboutBoxBg': 'rgb(255, 248, 220)',
+    '--aboutBoxTitles': 'rgb(150, 120, 60)',
+  },
+  peach: {
+    '--imageAreaImg': 'url(imgs/peach-soda.png)',
+    '--titlesColors': 'rgb(255, 170, 130)',
+    '--introTextAreaColor': 'rgb(255, 156, 71)',
+    '--buyNowBtn': 'rgb(255, 160, 120)',
+    '--buyNowBtnHover': 'rgb(230, 130, 90)',
+    '--flavourBg': 'rgb(255, 240, 230)',
+    '--aboutUsBg': 'rgb(255, 230, 215)',
+    '--textAreaShadow': 'rgb(200, 150, 130)',
+    '--textArea': 'rgb(255, 245, 235)',
+    '--navHover': 'rgb(250, 206, 184)',
+    '--navHoverShadow': 'rgb(235, 190, 170)',
+    '--navActive': 'rgb(245, 180, 150)',
+    '--aboutBoxBorer': 'rgb(210, 160, 140)',
+    '--aboutBoxBg': 'rgb(255, 245, 240)',
+    '--aboutBoxTitles': 'rgb(170, 130, 110)',
+  },
 };
 
 function changeThemes(theme) {
@@ -66,4 +117,9 @@ function changeThemes(theme) {
     root.style.setProperty(variable, value);
   }
   window.scrollTo({ top: 0, behavior: "smooth" })
+}
+function randomTheme(){
+  const random = ["lemon" , "strawberry" , "blueberry" , "pineapple" , "peach"];
+  const theme = random[Math.floor(Math.random() * random.length )]
+  changeThemes(theme)
 }
