@@ -385,7 +385,7 @@ align-items: center;
 }
 nav{
 	display: grid;
-	grid-template-columns:60px 70px 60px 60px 110px 40px;
+	grid-template-columns:60px 70px 60px 60px 80px 40px;
 	max-width:fit-content;
 	grid-gap: 0.5em;
 }
@@ -715,7 +715,7 @@ cursor: pointer;
 
 
 
-  
+  /*review sec*/
 .reviews {
   display: flex;
   justify-content: center;
