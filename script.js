@@ -4,6 +4,9 @@ function mainPage() {
 function aboutPage() {
 	document.getElementById("about-section").scrollIntoView({ behavior: "smooth" });
 }
+function reviews(){
+  document.querySelector(".reviewsNav").scrollIntoView({ behavior: "smooth" })
+}
 window.onscroll = function() {
   var logo = document.getElementById('logo-circle');
   var flavor = document.getElementById('flavorSec');
