@@ -216,7 +216,7 @@ transition: all 0.5s;
     left: 100%;
     animation: autoRun 35s linear infinite;
     transition: all 0.5s ease;
-    animation-delay: calc( (35s / var(--quantity)) * (var(--position) - 1) - 10s)!important;
+    animation-delay: calc( (35s / var(--quantity)) * (var(--position) - 1) - 35s)!important;
 }
 .slider .list .item img{
     width: 100%;
