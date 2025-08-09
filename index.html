@@ -22,6 +22,15 @@
                 popin'
 		    </div>
 	   </div>
+	   
+	   <!-- Mobile Menu Toggle -->
+	   <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+		   <span></span>
+		   <span></span>
+		   <span></span>
+	   </button>
+	   
+	   <!-- Desktop Navigation -->
 	   <nav>
 <a onclick="mainPage()">main</a>
 <a onclick="flavorPage()">flavors</a>
@@ -30,6 +39,16 @@
 <a onclick="reviews()">reviews</a>
 <i class="ti ti-brush" onclick="randomTheme()"></i>
 	   </nav>
+	   
+	   <!-- Mobile Navigation -->
+	   <div class="mobile-nav" id="mobile-nav">
+		   <a onclick="mainPage(); closeMobileMenu();"><i class="ti ti-home"></i>main</a>
+		   <a onclick="flavorPage(); closeMobileMenu();"><i class="ti ti-glass"></i>flavors</a>
+		   <a onclick="aboutPage(); closeMobileMenu();"><i class="ti ti-info-circle"></i>about</a>
+		   <a onclick="shopePage(); closeMobileMenu();"><i class="ti ti-shopping-cart"></i>shop</a>
+		   <a onclick="reviews(); closeMobileMenu();"><i class="ti ti-star"></i>reviews</a>
+		   <a onclick="randomTheme(); closeMobileMenu();"><i class="ti ti-brush"></i>theme</a>
+	   </div>
 	 </header>
 
 	 <div class="loading-page">

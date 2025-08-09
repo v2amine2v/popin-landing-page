@@ -126,3 +126,38 @@ function randomTheme(){
   const theme = random[Math.floor(Math.random() * random.length )]
   changeThemes(theme)
 }
+
+// Mobile Menu Functions
+function toggleMobileMenu() {
+	const mobileNav = document.getElementById('mobile-nav');
+	const mobileToggle = document.querySelector('.mobile-menu-toggle');
+	
+	mobileNav.classList.toggle('active');
+	mobileToggle.classList.toggle('active');
+}
+
+function closeMobileMenu() {
+	const mobileNav = document.getElementById('mobile-nav');
+	const mobileToggle = document.querySelector('.mobile-menu-toggle');
+	
+	mobileNav.classList.remove('active');
+	mobileToggle.classList.remove('active');
+}
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', function(event) {
+	const mobileNav = document.getElementById('mobile-nav');
+	const mobileToggle = document.querySelector('.mobile-menu-toggle');
+	
+	if (!mobileNav.contains(event.target) && !mobileToggle.contains(event.target)) {
+		mobileNav.classList.remove('active');
+		mobileToggle.classList.remove('active');
+	}
+});
+
+// Close mobile menu on window resize if switching to desktop
+window.addEventListener('resize', function() {
+	if (window.innerWidth > 480) {
+		closeMobileMenu();
+	}
+});
